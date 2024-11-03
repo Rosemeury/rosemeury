@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #fffbcd;
+}
+h3{
+    padding-left: 10px;
+}
+
+.cabeçalho p {
+    color: rgb(255, 255, 255);
+}
+
+/* =========================================================== */
+
+/* Media query para dispositivos móveis */
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        color: white; 
+        background-image: url(img/fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+    }
+    .imgcabecalho {
+        width: 150px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .textocaabecalho{
+        margin-left: 30px;
+        font-size: 0.8em;
+    }
+    .btnmedia {
+        width: 110px;
+    }
+    .btnsecao {
+        width: 170px;
+    }
+    .btnrotas {
+        font-size:2em;
+        margin-right: 15px;
+    }
+    .device {
+        /* width: 200px; */
+        /* height: 500px; */
+    }
+    .anuncio {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .media{
+        background-color: black;
+        border-radius: 20px 20px 0px 0px;
+        height:290px;
+    }
+}
+
+/* Media query para desktops */
+@media (min-width: 768px) {
+    header {
+        height: 180px;
+        display: flex;
+        color: white; 
+        background-image: url(img/fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imgcabecalho {
+        width: 250px;
+        margin-left: 30px;
+    }
+    .textocaabecalho{
+        margin-left: 50px;
+        font-size: 1em;
+    }
+    .btnmedia {
+        width: 110px;
+    }
+    .btnsecao {
+        width: 170px;
+    }
+    .btnrotas {
+        font-size:2.5em
+    }
+    .device {
+        width: 273px;
+    }
+    .anuncio {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+        /* margin-left: 10px; */
+        /* height: 100vh; */
+        height: 500px;
+    }
+    .media{
+        background-color: black;
+        border-radius: 20px 20px 0px 0px;
+        height:380px;
+    }
+}
+
+/* .device {
+    width: 270px;
+}
+.anuncio {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    height: 500px;
+} */

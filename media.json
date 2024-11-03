@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "titulo": "Mimos da Meury tutorial para iniciantes",
+        "descricao": "descrição do conteúdo",
+        "url": "uploads\/espelho.mp4",
+        "tipo": "video\/mp4",
+        "secao": "tutoriais",
+        "link": "https:\/\/www.youtube.com\/"
+    },
+    {
+        "id": 2,
+        "titulo": "Mimos da Meury tutorial para iniciantes",
+        "descricao": "Descrição do conteudo",
+        "url": "uploads\/espelho.mp4",
+        "tipo": "video\/mp4",
+        "secao": "tutoriais",
+        "link": "https:\/\/www.youtube.com\/"
+    },
+    {
+        "id": 3,
+        "titulo": "Mimos da Meury tutorial para iniciantes",
+        "descricao": "Descrição do conteúdo",
+        "url": "uploads\/Rosa Mosqueta.mp4",
+        "tipo": "video\/mp4",
+        "secao": "revenda",
+        "link": "https:\/\/shopee.com.br\/"
+    },
+    {
+        "id": 4,
+        "titulo": "Mimos da Meury tutorial para iniciantes",
+        "descricao": "Descrição do conteudo",
+        "url": "uploads\/espelho.mp4",
+        "tipo": "video\/mp4",
+        "secao": "tutoriais",
+        "link": "https:\/\/www.youtube.com\/"
+    },
+    {
+        "id": 5,
+        "titulo": "Mimos da Meury tutorial para iniciantes",
+        "descricao": "descricao do produto",
+        "url": "uploads\/brinde.jpg",
+        "tipo": "image\/jpeg",
+        "secao": "revenda",
+        "link": "https:\/\/shopee.com.br"
+    },
+    {
+        "id": 6,
+        "titulo": "Mimos da Meury tutorial para iniciantes",
+        "descricao": "descricao do conteudo",
+        "url": "uploads\/lembranca.jpg",
+        "tipo": "image\/jpeg",
+        "secao": "tutoriais",
+        "link": "https:\/\/www.youtube.com"
+    }
+]

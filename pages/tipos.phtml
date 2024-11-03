@@ -1,0 +1,37 @@
+<?php 
+include  __DIR__ . '/../backend/mostrarimoveis.php';
+?>
+
+<?php if (!empty($medias)): ?>
+    <?php foreach ($medias as $media): ?>
+        
+        <div class="device">
+            <div class='card shadow-sm border' style='background-color:#fffbcd;border-radius: 20px 20px;'>
+
+            <?php if (strpos($media['tipo'], 'video') !== false): ?>
+                <video class="media" controls>
+                    <source src="<?php echo htmlspecialchars($media['url'], ENT_QUOTES, 'UTF-8'); ?>" type="<?php echo htmlspecialchars($media['tipo'], ENT_QUOTES, 'UTF-8'); ?>">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            <?php elseif (strpos($media['tipo'], 'image') !== false): ?>
+                <img class="media" src="<?php echo htmlspecialchars($media['url'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($media['titulo'], ENT_QUOTES, 'UTF-8'); ?>" height="330" style='border-radius: 20px 20px 0px 0px;'>
+            <?php endif; ?>
+
+            <div class='card-body p-2 d-flex justify-content-center mt-3' style="height: 120px;">
+                <div>
+                <h5 class='card-title fw-blold'><?php echo htmlspecialchars($media['titulo'], ENT_QUOTES, 'UTF-8'); ?></h5>
+                <h6 class='card-subtitle'><?php echo htmlspecialchars($media['descricao'], ENT_QUOTES, 'UTF-8'); ?></h6>
+                <?php if ($media['secao'] == 'revenda'): ?>
+                <a href="<?php echo htmlspecialchars($media['link'], ENT_QUOTES, 'UTF-8'); ?>" class='btn btn-warning btn-sm rounded-pill btnmedia mt-1 pt-0 pb-0'>Shopee <i class="bi bi-bag-fill text-danger"></i></a>
+                <?php else: ?>
+                <a href="<?php echo htmlspecialchars($media['link'], ENT_QUOTES, 'UTF-8'); ?>" class='btn btn-warning btn-sm rounded-pill btnmedia mt-1 pt-0 pb-0'>YouTube <i class="bi bi-play-btn-fill text-danger"></i></a>
+                <?php endif; ?>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+          
+    <?php endforeach; ?>
+<?php endif; ?>
